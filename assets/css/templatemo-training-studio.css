@@ -5,6 +5,15 @@ font & reset css
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Adlery';
+  src: url('../fonts/Adlery.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BryndanWrite';
+  src: url('../fonts/BryndanWrite.ttf') format('truetype');
+}
+
 /* 
 ---------------------------------------------
 reset
@@ -56,8 +65,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 600;
+  font-family: "BryndanWrite", sans-serif;
   background-color: #fff;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
@@ -79,7 +87,7 @@ ul {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -122,17 +130,20 @@ global styles
 }
 
 .section-heading h2 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 800;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 0px;
   margin-bottom: 0px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .section-heading h2 em {
   font-style: normal;
   color: #E06A59;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .section-heading img {
@@ -232,7 +243,6 @@ header
   color: #fff;
   font-size: 32px;
   font-weight: 800;
-  text-transform: uppercase;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -293,7 +303,6 @@ header
   text-align: center;
   font-weight: 400;
   letter-spacing: 0px;
-  text-transform: uppercase;
   transition: all .3s;
   height: auto;
   line-height: 20px;
@@ -608,8 +617,6 @@ banner
 .main-banner .caption h6 {
   margin-top: 0px;
   font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 800;
   color: #fff;
   letter-spacing: 0.5px;
 }
@@ -618,7 +625,6 @@ banner
   margin-top: 30px;
   margin-bottom: 25px;
   font-size: 84px;
-  text-transform: uppercase;
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
@@ -716,7 +722,6 @@ about
   margin-top: 7px;
   display: inline-block;
   font-size: 13px;
-  text-transform: uppercase;
   color: #E06A59;
   font-weight: 500;
 }
@@ -969,9 +974,6 @@ responsive
 
   .main-banner .caption h2 {
     font-size: 64px;
-  }
-  #about {
-    margin-bottom: 110px;
   }
   #about .feature-item {
     margin-bottom: 30px;
