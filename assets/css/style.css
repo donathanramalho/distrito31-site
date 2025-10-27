@@ -597,7 +597,7 @@ Principal
   display: flex;
   justify-content: center;
   align-items: end;
-  padding-bottom: 130px;
+  padding: 0 20px 130px 20px
 }
 
 .main-banner {
@@ -681,6 +681,24 @@ About
   height: 450px;
 }
 
+.logo-estilos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-estilos img {
+  width: 70%;
+  height: auto;
+}
+
+.estilo-espaco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image-card img {
   width: 100%;
   height: 100%;
@@ -746,12 +764,21 @@ About
   font-weight: 500;
 }
 
-@media (max-width: 992px) {
-  .image-card {
-    margin-top: 50px;
-    height: 250px;
+@media (min-width: 768px) {
+  .estilo-espaco {
+    padding: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .image-card {
+    margin: 50px 0;
+    object-position: top;
+    width: 90%;
+  }
+}
+
+
 
 /*
 --------------------------------------------
@@ -790,7 +817,6 @@ About Us
   .about-us {
     flex-direction: row;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
